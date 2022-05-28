@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a43ca74088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Instagram</title>
+</head>
+<body>
+
+    <div id="modal">
+        <div class="modal-contain">
+         <div id="closeModal" onclick="closeModal()">
+            <i class="fa-solid fa-xmark"></i>
+         </div>
+            <div class="sign-up">
+              
+              <img src="./img/instagram-logo.png" alt="facebook logo.">
+              
+                <h3> Sign up to see photos and videos from your friends.</h3>
+                <button class="login-facebook" href="#">
+                    <i class="fa-brands fa-facebook-square"></i>  
+                    <p>Log in with facebook</p>
+                    
+                </button>
+         
+            </div>
+            <h4 class="or">Or</h4>
+           
+            <form action="" method="post" id="form">
+
+               <h4>Crerate your account</h4>
+               <input type="text" required placeholder="Mobile number or email" >
+               <input type="text" required placeholder="Full name" >
+               <input type="text" required placeholder="Username" >
+               <input type="password" required placeholder="Create password" >
+               <input type="password" required placeholder="Confirm password" >
+           <button id="register" type="submit">Register</button>
+            </form>
+            <p class="terms">By signing up, you agree to our Terms , Data Policy and Cookies Policy .</p>
+        </div>
+    </div>
+    <div class="instagram-contain">
+        <div class="instagram-phone">
+            <img src="./img/instagram-celular.png" alt="phone with instagram page.">
+        </div>
+        <div class="instagram-login">
+           <div class="group">
+               <img src="./img/instagram-logo.png" class="insta-logo" alt="instagram logo.">
+              <div class="profile-picture">
+                  <img src="./img/279352291_4915500895213180_7815170192980805539_n.jpg" alt="perfil picture instgram.">
+              </div>
+              
+                <a href="#" class="instagram-perfil-login">Continue as alexandre.almeida</a>
+                <br>
+                <a href="#" class="instagram-perfil-logout">Remove account</a>
+              
+              </div>
+           
+            <div class="group">
+                <p class="not-account">not alexandre.almeida?</p>
+                 <p class="notaccount">
+                     <span class="switch accounts"> <a href="#"> 
+                        Switch account
+                     </a> </span>
+                     or
+                      <span>
+                        <a onclick="openModal()" id="openModal" class="buttonOpenModal" href="#">
+                             Sign-up
+                        </a> 
+                      </span>
+                 </p>
+            </div>
+           
+            <div class="get-the-app">
+                <p class="get-app">Get the app.</p>
+                <div class="downloads">
+                    <a href="#" class="app-download">
+                        <img src="./img/googleplay-button.png" alt="">
+                    </a>
+                    <a href="#" class="app-download">
+                       <img src="./img/apple-button.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
